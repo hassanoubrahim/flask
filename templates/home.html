@@ -35,10 +35,10 @@
 
   <p style="color:rgb(51, 51, 83); font-weight: 700;">
     
-    {% if res == 0 %}
-        prediction : <h1 style="color: rgb(88, 180, 88); font-weight: 900;">Sick</h1>
-    {% elif res == 1 %}
-        prediction : <h1 style="color: red; font-weight: 900;">Not Sick</h1>
+    {% if res == 1 %}
+        prediction : <h1 style="color: red; font-weight: 900;">Sick</h1>
+    {% elif res == 0 %}
+        prediction : <h1 style="color: green; font-weight: 900;">Not Sick</h1>
     {%else %}
 
     {% endif %}
