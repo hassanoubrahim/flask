@@ -7,14 +7,14 @@ import numpy as np
 
 def predModel(data):
     user_input = np.array([[
-        int(data['preg']),
-        int(data['plas']),
-        int(data['pres']),
-        int(data['skin']),
-        int(data['test']),
-        int(data['mass']),
-        int(data['pedi']),
-        int(data['age'])
+        float(data['preg']),
+        float(data['plas']),
+        float(data['pres']),
+        float(data['skin']),
+        float(data['test']),
+        float(data['mass']),
+        float(data['pedi']),
+        float(data['age'])
     ]])
     model = data['model']
     if model == "KNN":
